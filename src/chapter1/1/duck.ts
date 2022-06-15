@@ -1,10 +1,10 @@
-abstract class Duck {
+export abstract class Duck {
   quack() {
     console.log('duck quack.');
   }
 
   swim() {
-    console.log('duck swim.')
+    console.log('duck swim.');
   }
 
   display() {

@@ -1,20 +1,21 @@
-abstract class Duck {
-  
+import { FlyBehavior, QuackBehavior } from './interface';
+
+export abstract class Duck {
   /**
    * Program to an interface, not an implementation.
    */
-  constructor(private flyBehavior: FlyBehavior, 
-    private quackBehavior: QuackBehavior) {}
+  private flyBehavior: FlyBehavior | undefined;
+  private quackBehavior: QuackBehavior | undefined;
 
   swim() {
     console.log('swim');
   }
 
   performQuack() {
-    this.quackBehavior.quack();
+    this.quackBehavior?.quack();
   }
 
   performFly() {
-    this.flyBehavior.fly();
+    this.flyBehavior?.fly();
   }
 }

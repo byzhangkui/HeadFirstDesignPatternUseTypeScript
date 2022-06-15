@@ -6,16 +6,26 @@
   "author": "kory",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "run-lint": "eslint --ext .ts .",
+    "prettier": "prettier .",
+    "ts-check": "tsc --noEmit --resolveJsonModule"
   },
-  "dependencies": {
-    "typescript": "^4.7.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
-    "eslint": ">=5.16.0",
-    "eslint-config-google": "^0.14.0",
-    "husky": "^8.0.1"
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.7.0",
+    "typescript": "^4.7.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint"
+    ]
   }
 }
