@@ -7,9 +7,7 @@ export abstract class Duck {
     console.log('duck swim.');
   }
 
-  display() {
-    console.log('duck display.');
-  }
+  abstract display(): void;
 
   /**
    * when add fly() to Duck, all ducks even RubberDuck can fly.

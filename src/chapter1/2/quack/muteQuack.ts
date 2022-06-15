@@ -2,6 +2,6 @@ import { QuackBehavior } from '../interface';
 
 export class MuteQuack implements QuackBehavior {
   quack(): void {
-    console.log('cannot quack.');
+    console.log('<< Silence >>');
   }
 }

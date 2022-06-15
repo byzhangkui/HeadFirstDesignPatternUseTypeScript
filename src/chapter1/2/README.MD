@@ -1,0 +1,1 @@
+https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492077992/files/assets/f0022-01.png

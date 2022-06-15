@@ -2,6 +2,6 @@ import { FlyBehavior } from '../interface';
 
 export class FlyWithWings implements FlyBehavior {
   fly() {
-    console.log('fly with wings.');
+    console.log(`I'm flying!`);
   }
 }
